@@ -1,0 +1,25 @@
+{
+  "name": "nextjs-alura-samplepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelluspaixao/nextjs-alura-samplepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelluspaixao/nextjs-alura-samplepage/issues"
+  },
+  "homepage": "https://github.com/angelluspaixao/nextjs-alura-samplepage#readme",
+  "dependencies": {
+    "next": "^13.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
