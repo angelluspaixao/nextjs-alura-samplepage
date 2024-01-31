@@ -1,12 +1,17 @@
-import Head from "next/head";
+import { Open_Sans} from '@next/font/google'
 import GlobalStyle from "../src/theme/GlobalStyle";
+
+const open_sans = Open_Sans({
+    subsets: ['latin'],
+    weight: ['300', '400', '500', '600'],
+})
 
 function MyApp({ Component, pageProps }) {
     return (
         <>
-            <Head>
-                {/* -- Aplicação de Google Analytics -- */}
-                {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZDPX3BLK"></script>
+            {/* -- Aplicação de Google Analytics -- */}
+            {/* <Head>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZDPX3BLK"></script>
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
@@ -17,13 +22,12 @@ function MyApp({ Component, pageProps }) {
                             gtag('config', 'G-2QZDPX3BLK');
                         `
                     }}
-                /> */}
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={true.toString()} />
-                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" />
-            </Head>
-            <GlobalStyle />
-            <Component {...pageProps} />
+                />
+            </Head> */}
+            <main className={open_sans.className}>
+                <GlobalStyle />
+                <Component {...pageProps} />
+            </main>
         </>
     )
 }
