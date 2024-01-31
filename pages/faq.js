@@ -24,7 +24,7 @@ export default function FAQ({ faq }) {
             <Head>
                 <title>FAQ - Curso Next.js</title>
             </Head>
-            <h1>FAQ</h1>
+            <h1>Curso Next.js - Página de FAQ</h1>
             <Link href="/">Retorne ao Home</Link>
             <ul>
                 {faq.map(({question, answer}) => (
