@@ -3,7 +3,9 @@ import GlobalStyle from "../src/theme/GlobalStyle";
 
 const open_sans = Open_Sans({
     subsets: ['latin'],
-    weight: ['300', '400', '500', '600'],
+    weight: ['300', '400', '500', '600', '700', '800'],
+    display: 'swap',
+    style: ['normal', 'italic'],
 })
 
 function MyApp({ Component, pageProps }) {
