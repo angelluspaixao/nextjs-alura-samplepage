@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps }) {
                 />
             </Head> */}
             <main className={open_sans.className}>
+                <meta name="google-site-verification" content="Nyq16EEID09UT-KrVIfARu2Jw549LX2AN8zUe7hKPxA" />
                 <GlobalStyle />
                 <Component {...pageProps} />
             </main>
