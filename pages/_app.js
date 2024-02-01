@@ -1,4 +1,5 @@
 import { Open_Sans} from '@next/font/google'
+import Head from 'next/head';
 import GlobalStyle from "../src/theme/GlobalStyle";
 
 const open_sans = Open_Sans({
@@ -12,8 +13,8 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             {/* -- Aplicação de Google Analytics -- */}
-            {/* <Head>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZDPX3BLK"></script>
+            <Head>
+                {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZDPX3BLK"></script>
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
@@ -24,10 +25,10 @@ function MyApp({ Component, pageProps }) {
                             gtag('config', 'G-2QZDPX3BLK');
                         `
                     }}
-                />
-            </Head> */}
-            <main className={open_sans.className}>
+                /> */}
                 <meta name="google-site-verification" content="Nyq16EEID09UT-KrVIfARu2Jw549LX2AN8zUe7hKPxA" />
+            </Head>
+            <main className={open_sans.className}>
                 <GlobalStyle />
                 <Component {...pageProps} />
             </main>
